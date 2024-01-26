@@ -41,4 +41,6 @@ This query should return:
 -  and how many of that product they sold */
 SELECT e.EmployeeID, e.FirstName, e.LastName, p.Name, s.Quantity FROM employees AS e
 INNER JOIN sales AS s ON e.EmployeeID = s.EmployeeID
-INNER JOIN products AS p ON s.ProductID = p.ProductID;
+INNER JOIN products AS p ON s.ProductID = p.ProductID
+ORDER BY FirstName;
+
